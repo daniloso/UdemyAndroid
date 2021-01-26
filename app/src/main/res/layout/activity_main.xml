@@ -10,22 +10,34 @@
         android:id="@+id/textoExibicao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="48dp"
-        android:text="Clique abaixo"
-        app:layout_constraintStart_toStartOf="@+id/button"
+        android:layout_marginTop="44dp"
+        android:text="Escolha um número de 0 a 10"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:onClick="alterarTexto"
-        android:text="clique aqui"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="76dp"
+        android:onClick="sortearNumero"
+        android:text="jogar"
+        app:layout_constraintStart_toStartOf="@+id/textoResultado"
+        app:layout_constraintTop_toBottomOf="@+id/textoExibicao" />
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="Numero selecionado"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoExibicao" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
