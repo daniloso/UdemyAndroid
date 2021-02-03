@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void alterarTexto(View view) {
 
-        TextView texto = findViewById(R.id.textoExibicao);
-        texto.setText("Texto alterado, uhuuhuhuhu!!");
+//        TextView texto = findViewById(R.id.textoExibicao);
+//        texto.setText("Texto alterado, uhuuhuhuhu!!");
 
     }
 
     public void sortearNumero(View view) {
 
 
-        TextView texto = findViewById(R.id.textoResultado);
-        int x = new Random().nextInt(11);
-        texto.setText("Número: "+x);
+//        TextView texto = findViewById(R.id.textoResultado);
+//        int x = new Random().nextInt(11);
+//        texto.setText("Número: "+x);
 
 
     }
